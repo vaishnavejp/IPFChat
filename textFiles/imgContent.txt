@@ -1,0 +1,29 @@
+CSM
+Identity CSM Reachability Resolution Services
+Dynamic Settings
+Bulk Services Notification Scheduling Manager
+Caching
+Icon Test Framework
+Connector Framework
+System Connectivity
+Mapping Framework
+ODS
+GUI
+Testing
+Flo-Lang
+Orchestration
+Flo-Starter
+Visualisation
+IPF
+IPF Test Extensions
+Payments Model
+Data Processing
+Processing Data
+Developer App
+Peristence
+System Events
+PPrometheusl & Grafana
+AWS
+Environment
+IKubernetes
+Monitoring
