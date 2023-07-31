@@ -17,6 +17,21 @@ This is a chatbot implementation in Streamlit using OpenAI ChatGPT and ChromaDB 
 </ol>
 
 ## Tech Stack
+<ul>
+  <li> Interpreter: Python</li>
+  <li>Text Editor: Notepad / Visual Studio Code</li>
+  <li>To run the model:
+    <ol>
+      <li>Command Prompt</li>
+        <li> Anaconda Shell</li>
+        <li>Visual Studio Code terminal / Your preferred text editor terminal.</li>
+    </ol>
+  </li>
+</ul>
+
+
+
+
 
 
 
