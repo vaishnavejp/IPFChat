@@ -11,23 +11,24 @@ from streamlit_chat import message
 from langchain import PromptTemplate
 from PIL import Image
 
+#customise frontend
 st.set_page_config(page_title="ChatBot")
 image = Image.open('logo.png')
 
 st.image(image, width=100)
 
 load_dotenv()
-
+#set open api key from .env
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-
+#load chromadb embeddings from disk
 persist_dir = "db"
 embeddings = OpenAIEmbeddings()
 db = Chroma(persist_directory=persist_dir, embedding_function=embeddings)
 
-
+# caching function for repeated use
 @st.cache_resource
 def search_db():
-
+    #instruct the gpt-turbo-3.5 model to answer only from embeddings by using a prompt
     prompt_template = """If the context is not relevant, 
     please say Im sorry, but I currently dont have enough context to answer your question. 
     
@@ -42,11 +43,16 @@ def search_db():
 
     chain_type_kwargs = {"prompt": PROMPT}
     retriever = db.as_retriever()
+    #cosine similarity as distance metric of vectors
     retriever.search_kwargs["distance_metric"] = "cos"
+    #top 100 results are taken from embedding
     retriever.search_kwargs["fetch_k"] = 100
+    # selects embeddings based on a combination of which embeddings are most similar to the inputs, while also optimizing for diversity
     retriever.search_kwargs["maximal_marginal_relevance"] = True
+    #top 10 results are fetched
     retriever.search_kwargs["k"] = 10
     model = ChatOpenAI(model="gpt-3.5-turbo")
+    # retrivalAQ instance , retrievalQA part of langchain chain library, used for question answering
     qa = RetrievalQA.from_chain_type(model, retriever=retriever, return_source_documents=True, chain_type_kwargs=chain_type_kwargs)
     return qa
 
@@ -95,6 +101,7 @@ def main():
     if user_input:
         output = qa({"query": user_input})
         print(output["source_documents"])
+        #adding the current query and response to appropriate lists
         st.session_state.past.append(user_input)
         response = str(output["result"])
         st.session_state.generated.append(response)
