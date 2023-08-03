@@ -1,5 +1,5 @@
 # Chatbot-using-OpenAi
-This is a chatbot implementation in Streamlit using OpenAI ChatGPT and ChromaDB which is a vector database.
+This is a chatbot implementation with streamlit using OpenAI models and chroma db vector database
 
 ## Implementation
 
