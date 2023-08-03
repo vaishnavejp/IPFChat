@@ -19,4 +19,4 @@ IPF Developer Documentation, similar to most vendor product manuals, is designed
    i) Generating embeddings
    ii) Saving embeddings to local DB
 
-3) Inference - Use embedding to answer queries
+3) Inference - Use embedding to answer querie
