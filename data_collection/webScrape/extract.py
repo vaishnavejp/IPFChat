@@ -3,7 +3,8 @@ import requests
 
 # Add the file in which all the extracted URLs are stored
 # EXAMPLE - fd = open("./textFiles/extractURL.txt", "r", encoding="utf-8")
-fd = open("<YOUR FILE PATH>", "r", encoding="utf-8")
+fd = open("<YOUR FILE PATH>", "r", encoding="utf-8") 
+
 linksRead = fd.read().splitlines()
 
 links = []
