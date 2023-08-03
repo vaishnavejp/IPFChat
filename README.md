@@ -23,8 +23,7 @@ Most of the topics from Core and Learn IPF are included as data for this chatbot
      2) Saving embeddings to local DB - stored in a specific directory.
 3) Inference - Use embedding to answer queries
 
-
-
+The files for web scraping is available in the ```data_collection``` folder and the files for the embedding and inference are available in the ```chatBot``` folder
 
 
 
