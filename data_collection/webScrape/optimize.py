@@ -1,3 +1,5 @@
+# Remove unnecessary, extra lines
+
 # Add the path to the file that containes the final scraped content
 # EXAMPLE - fd = open("./textFiles/finalContent.txt", "r", encoding="utf-8")
 fd = open("<YOUR FILE PATH>", "r", encoding="utf-8")
