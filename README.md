@@ -25,7 +25,8 @@ Most of the topics from Core and Learn IPF are included as data for this chatbot
 
 The files for web scraping is available in the ```data_collection``` folder and the files for the embedding and inference are available in the ```chatBot``` folder
 
-
+If there is any change in the data that is used,make sure the correct data is present in the data directory.
+Also if there is any change in data,adjust the db directory as well.
 
 
 
