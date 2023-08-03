@@ -1,7 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
 
-fd = open("./textFiles/crawlURL.txt", "r", encoding="utf-8")
+// Add the url you want to crawl in textFiles/crawlURL.txt 
+// EXAMPLE - fd = open("./textFiles/crawlURL.txt", "r", encoding="utf-8")
+
+fd = open("<YOUR FILE PATH>", "r", encoding="utf-8")
 linksRead = fd.read().splitlines()
 
 links = []
@@ -9,7 +12,10 @@ for i in linksRead:
     links.append(i)
 
 content = ""
-c = "https://docs.ipfdev.co.uk/learn/RELEASE-IPF-2023.1.0/tutorials/"
+
+// manually add base path link
+//EXAMPLE - c = "https://docs.ipfdev.co.uk/learn/RELEASE-IPF-2023.1.0/tutorials/"
+c = "<YOUR BASE PATH>"
 
 for i in links:
     file = requests.get(i)
