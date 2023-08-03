@@ -16,10 +16,9 @@ IPF Developer Documentation, similar to most vendor product manuals, is designed
 
 1) Data collection - Web page scraping
 2) Data processing -
-
      1) Generating embeddings - vectors stored by using chromadb 
      2) Saving embeddings to local DB - stored in a specific directory.
-3) Inference - Use embedding to answer queries
+4) Inference - Use embedding to answer queries
 
 
 
