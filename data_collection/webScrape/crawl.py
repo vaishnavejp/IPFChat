@@ -3,7 +3,6 @@ import requests
 
 # Add the url you want to crawl in textFiles/crawlURL.txt 
 # EXAMPLE - fd = open("./textFiles/crawlURL.txt", "r", encoding="utf-8")
-
 fd = open("<YOUR FILE PATH>", "r", encoding="utf-8")
 
 linksRead = fd.read().splitlines()
@@ -16,7 +15,6 @@ content = ""
 
 # Manually add base path link
 # EXAMPLE - c = "https://docs.ipfdev.co.uk/learn/RELEASE-IPF-2023.1.0/tutorials/"
-
 c = "<YOUR BASE PATH>"
 
 for i in links:
@@ -38,10 +36,13 @@ for i in links:
     content = content.splitlines()
     finalURLs = []
     for k in content:
+        # Manually add base path
         c = "https://docs.ipfdev.co.uk/learn/RELEASE-IPF-2023.1.0/tutorials/"
         c += k
         c += "\n"
         if c not in finalURLs:
             finalURLs.append(c)
-    fd = open("./textFiles/extractURL.txt", "a", encoding="utf-8")
+    # Add the file path to store crawled URLS
+    # EXAMPLE - fd = open("./textFiles/extractURL.txt", "a", encoding="utf-8")
+    fd = open("<YOUR FILE PATH>", "r", encoding="utf-8")
     fd.writelines(finalURLs)
