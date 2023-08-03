@@ -5,8 +5,8 @@ This is a chatbot implementation in Streamlit using OpenAI ChatGPT and ChromaDB 
 
 1) Upload the necessary pdfs to data folder.
 2) If changes are made to the pdfs other than the default ones,delete all files and folders inside the 'db' directory.
-3) The default pdfs inside data folder contains information about the IPF documentation(Core and Learn IPF)
-4) Create an environment file(.env) inside which the openai api key is stored in the format:```OPENAI_API_KEY='YOUR_API_KEY_HERE'```
+3) The default pdfs inside the data folder has files containing information about IPF Documentation(CORE and LEARN IPF).
+4) Create an environment file(.env) inside where the openai api key is stored in the following format:```OPENAI_API_KEY='YOUR_API_KEY_HERE'```
 5) Create a virtual environment if required.
 6) Open the terminal and run the following command for installing the packages inside requirements.txt file :
    ```Python
