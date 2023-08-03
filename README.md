@@ -12,12 +12,19 @@ IPF Developer Documentation, similar to most vendor product manuals, is designed
 3) The model should be capable of understanding the intent behind the question and retrieving the most appropriate information from the knowledge base.
 
 
-#### There are 3 main steps in developing a custom knowledge chatbot:
+#### There are 3 main steps in developing a custom knowledge chatbot
 
 1) Data collection - Web page scraping
 2) Data processing -
+
      1) Generating embeddings - vectors stored by using chromadb 
      2) Saving embeddings to local DB - stored in a specific directory.
 3) Inference - Use embedding to answer queries
 
+
+=======
+   i) Generating embeddings
+   ii) Saving embeddings to local DB
+
+3) Inference - Use embedding to answer querie
 
