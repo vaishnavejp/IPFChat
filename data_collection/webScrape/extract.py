@@ -1,3 +1,6 @@
+# Run crawl.py before this
+# Scrape content from the collected hyperlinks 
+
 from bs4 import BeautifulSoup
 import requests
 
