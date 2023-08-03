@@ -6,6 +6,9 @@ Unlike generic chatbots, custom knowledge chatbot is trained on a specific datas
 ### Problem statement
 IPF Developer Documentation, similar to most vendor product manuals, is designed to be a longish book/tutorial type read. A chatbot style Q/A utility may be better suited for rapid learning on the job.<br>
 [Link to IPF documentation:](https://docs.ipfdev.co.uk/home/RELEASE-IPF-2023.1.0/home.html)
+
+Most of the topics from Core and Learn IPF are included as data for this chatbot.
+
 ### Objective:
 1) Integrate the IPF Developer Documentation into a Chatbot model, allowing it to access and utilize the information for answering specific queries related to IPF development.
 2) Enhance the model's natural language understanding capabilities to accurately interpret user queries, even when they are complex or contain technical terms related to IPF development.
@@ -18,7 +21,12 @@ IPF Developer Documentation, similar to most vendor product manuals, is designed
 2) Data processing -
      1) Generating embeddings - vectors stored by using chromadb 
      2) Saving embeddings to local DB - stored in a specific directory.
-4) Inference - Use embedding to answer queries
+3) Inference - Use embedding to answer queries
+
+
+
+
+
 
 
 
