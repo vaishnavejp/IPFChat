@@ -3,8 +3,8 @@ This is a chatbot implementation in Streamlit using OpenAI ChatGPT and ChromaDB 
 
 ## Implementation
 
-1) Upload the necessary pdfs in the data folder
-2) If changes are made to the pdfs other than the default ones,delete all files and folders inside the 'db' directory
+1) Upload the necessary pdfs to data folder.
+2) If changes are made to the pdfs other than the default ones,delete all files and folders inside the 'db' directory.
 3) The default pdfs inside data folder contains information about the IPF documentation(Core and Learn IPF)
 4) Create an environment file(.env) inside which the openai api key is stored in the format:```OPENAI_API_KEY='YOUR_API_KEY_HERE'```
 5) Create a virtual environment if required.
@@ -23,21 +23,18 @@ This is a chatbot implementation in Streamlit using OpenAI ChatGPT and ChromaDB 
    ```Python
    streamlit run app.py
    ```
-10) Open the url mentioned in the terminal in the browser(if not done automatically) and check the result.
+10) Open the url mentioned in the terminal of the text editor and open it(if not done automatically) in the browser.
    
 ## Tech Stack
-<ul>
-  <li> Interpreter: Python</li>
-  <li>Text Editor: Notepad / Visual Studio Code</li>
-  <li>To run the model:
-    <ol>
-      <li>Command Prompt</li>
-        <li> Anaconda Shell</li>
-        <li>Visual Studio Code terminal / Your preferred text editor terminal.</li>
-    </ol>
-  </li>
-</ul>
-
+1) Interpreter: ```Python```
+2) Text Editor: ```Notepad / Visual Studio Code / Preferred text editor```
+  <p>To run the model:</p> 
+1) Command Prompt
+<br>
+2) Anaconda Shell
+<br>
+3) Visual Studio Code terminal / Your preferred text editor terminal
+    
 
 
 
